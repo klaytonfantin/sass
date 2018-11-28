@@ -1,0 +1,51 @@
+@import "_plugins";
+
+
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.medium-grid {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 15px;
+    grid-template-columns: repeat(12, 70px);
+}
+
+.header-site {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 15px;
+    grid-template-columns: repeat(12, 70px);
+}
+
+.logo-site {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    padding: 10px 0;
+    background: $azul;
+}
+
+
+.nav-top {
+    grid-column: 6 / 11;
+    grid-row: 1;
+    background: $vermelho;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    ul {
+
+        li {
+            display: inline;
+            color: red;
+        }
+    }
+}
+
+.social-top {
+    grid-column: 11 / 13;
+    grid-row: 1;
+    background: $verde;
+}
